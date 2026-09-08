@@ -1,0 +1,73 @@
+{
+  "example_type": "sanitized_b2b_sales_signal",
+  "notice": "Fictional example created to demonstrate the intelligence workflow. No real prospect or client information is included.",
+  "signal": {
+    "signal_id": "SIG-DEMO-001",
+    "source_type": "Public Business Discussion",
+    "timestamp": "2026-09-05T10:30:00Z",
+    "organization": "Example Enterprise",
+    "location": "India",
+    "signal_category": "Business Challenge",
+    "content_summary": "A company leadership representative publicly discusses challenges related to improving leadership capability and organizational performance during a period of business growth.",
+    "source_url": "https://example.com/public-signal"
+  },
+  "processing": {
+    "normalized": true,
+    "duplicate_detected": false,
+    "noise_gate": {
+      "status": "PASS",
+      "reason": "The signal contains a specific business challenge with potential commercial relevance."
+    }
+  },
+  "intent_analysis": {
+    "classification": "Business Challenge",
+    "intent_level": "Potential",
+    "reason": "The discussion indicates an identifiable organizational challenge that may require external expertise."
+  },
+  "commercial_fit": {
+    "business_fit": "High",
+    "reason": "The identified challenge is aligned with the target business context used for this demonstration."
+  },
+  "buyer_persona": {
+    "identified": true,
+    "persona": "Business / Functional Leader",
+    "confidence": "Medium"
+  },
+  "contactability": {
+    "status": "Available",
+    "basis": "Public professional information is assumed to be available for this fictional example."
+  },
+  "geographic_relevance": {
+    "status": "PASS",
+    "reason": "The example organization is located within the intended market."
+  },
+  "recency": {
+    "status": "RECENT",
+    "reason": "The signal falls within the workflow's intended recent-signal monitoring window."
+  },
+  "prioritization": {
+    "commercial_intent": 85,
+    "business_fit": 90,
+    "contactability": 75,
+    "buyer_persona": 80,
+    "geographic_relevance": 100,
+    "recency": 95,
+    "priority_category": "HOT",
+    "note": "Illustrative scoring values only. The example demonstrates the prioritization methodology and does not represent a real lead qualification."
+  },
+  "recommended_action": {
+    "action": "Human Review",
+    "next_step": "Review the original signal, validate the business context, confirm stakeholder relevance, and decide whether further research or outreach is justified."
+  },
+  "human_decision": {
+    "status": "Pending",
+    "possible_actions": [
+      "Pursue",
+      "Research Further",
+      "Defer",
+      "Reject",
+      "Route to Another Team"
+    ]
+  },
+  "business_principle": "Automate information processing. Keep commercial judgment human."
+}
